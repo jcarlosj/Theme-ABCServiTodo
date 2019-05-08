@@ -103,21 +103,59 @@
                 <hgroup>
                     <h3>Cotice ahora</h3><hr><h2>Cuentenos que desea</h2>
                 </hgroup>
-                <form action="">
-                    <input type="text" name="" id="">
-                    <input type="email" name="" id="">
-                    <input type="text" name="" id="">
-                    <input type="text" name="" id="">
-                    <select name="" id="">
-                        <option value="">servicio 1</option>
-                        <option value="">servicio 2</option>
-                        <option value="">servicio 3</option>
-                        <option value="">servicio 4</option>
-                        <option value="">servicio 5</option>
-                    </select>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Enviar</button>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="address" placeholder="Dirección">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control" id="city" placeholder="Ciudad">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <select id="service" class="form-control">
+                                <option selected>Seleccione el servicio...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="files" required>
+                                <label class="custom-file-label" for="files">Adjuntar archivo...</label>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" id="details" rows="3">Detalles de lo que desea cotizar</textarea>
+                        </div>    
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="terms-conditions" required>
+                                <label class="form-check-label" for="terms-conditions">
+                                    Acepto términos y condiciones
+                                </label>
+                            </div>
+                        </div>
+                    </div>        
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
+
                 <hgroup>
                     <h3>Por que elegirnos</h3><hr><h2>Cómo trabajamos</h2>
                 </hgroup>
@@ -179,8 +217,15 @@
                         <h3>Mantente al tanto</h3><hr><h2>Registrate a nuestro boletín</h2>
                     </hgroup>
                     <p>Podrás mantenerte al tanto de toda nuestra información relevante</p>
-                    <input type="email" name="" id="">
-                    <button type="submit">Registrame</button>
+
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
 
                     <ul class="btn-group nav menu-social">
                         <li class="nav-item">

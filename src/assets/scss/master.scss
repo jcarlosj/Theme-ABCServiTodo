@@ -17,12 +17,12 @@ hr {
 }
 
 .row {
-    background-color: lighten($color: green, $amount: 50% );
+    //background-color: lighten($color: green, $amount: 50% );
     height: auto;
 
     & div {
         background-color: white;
-        border: 1px dotted gray;
-        box-sizing: border-box;
+        //border: 1px dotted gray;
+        //box-sizing: border-box;
     }
 }

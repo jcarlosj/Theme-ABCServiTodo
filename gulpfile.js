@@ -1,7 +1,9 @@
 // Imports
 const { src, dest, series, parallel, watch } = require( 'gulp' ),
       browserSync = require( 'browser-sync' ) .create(),
-      sass = require( 'gulp-sass');
+      sass = require( 'gulp-sass'),
+      imagemin = require( 'gulp-imagemin' ),
+      cache = require( 'gulp-cache' ); // Archivos de caché en secuencia para su uso posterior. 
 
 // Task: Compile Sass into CSS & auto-inject browsers
 function scss() {
@@ -28,6 +30,24 @@ function js() {
         .pipe( browserSync .stream() );
 }
 
+// Minimiza imágenes PNG, JPEG, GIF y SVG.
+function images() {
+	return src( './src/assets/images/**/*.{png,jpg,gif,svg}' )
+		.pipe(
+			cache(
+				imagemin([
+					imagemin .gifsicle({ interlaced: true }),
+					imagemin .jpegtran({ progressive: true }),
+					imagemin .optipng({ optimizationLevel: 3 }), // 0-7 low-high.
+					imagemin .svgo({
+						plugins: [ { removeViewBox: true }, { cleanupIDs: false } ]
+					})
+				])
+			)
+		)
+		.pipe( dest( './dist/assets/images/' ) );
+}
+
 // Static Server + Watching scss/html files
 function serve() {
 
@@ -50,6 +70,7 @@ function serve() {
 
 // Exports
 module .exports = {
-    default: series( parallel( scss, js ), serve ),
+    default: series( images, parallel( scss, js ), serve ),
+    images,
     scss
 }

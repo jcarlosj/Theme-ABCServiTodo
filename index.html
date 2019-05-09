@@ -83,6 +83,19 @@
         </div>
     </header>
 
+    <main class="main-content">
+        <div class="container">
+            <h1>Contenido Principal</h1>
+            <p>Nihil similique soluta doloremque nisi id quod animi magni corporis qui. Necessitatibus dolorem aut obcaecati? Quo amet nostrum quis, in iusto maiores!</p>
+        </div>    
+    </main>
+    <aside class="sidebar">
+        <div class="container">
+            <h3>Barra lateral</h3>
+            <p>Odio impedit quam natus ut quibusdam cum vero! Numquam quo dignissimos illo non tempore at quibusdam illum! At dolorum dolor temporibus necessitatibus!</p>
+        </div>
+    </aside>
+
     <section class="our-services">
 
         <div class="container">
@@ -192,113 +205,108 @@
         </div>
     </section><!-- .our-services -->
 
-
-    <div class="container">
-        <main class="main-content">
-            <section class="why-us">
-                <div class="row">
-                    <section class="quote-form col-md-6">
-                        <hgroup>
-                            <h3>Cotice ahora</h3><hr><h2>Cuentenos que desea</h2>
-                        </hgroup>
-        
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+    <section class="why-us">
+        <div class="container">
+            <div class="row">
+                <section class="quote-form col-md-6">
+                    <hgroup>
+                        <h3>Cotice ahora</h3><hr><h2>Cuentenos que desea</h2>
+                    </hgroup>
+    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="phone" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="address" placeholder="Dirección">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" id="city" placeholder="Ciudad">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <select id="service" class="form-control">
+                                    <option selected>Seleccione el servicio...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="files" required>
+                                    <label class="custom-file-label" for="files">Adjuntar archivo...</label>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" id="phone" placeholder="Teléfono">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" id="address" placeholder="Dirección">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <input type="text" class="form-control" id="city" placeholder="Ciudad">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-8">
-                                    <select id="service" class="form-control">
-                                        <option selected>Seleccione el servicio...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="files" required>
-                                        <label class="custom-file-label" for="files">Adjuntar archivo...</label>
-                                    </div>
-                                </div>
+                        </div>    
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" id="details" rows="3">Detalles de lo que desea cotizar</textarea>
                             </div>    
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="details" rows="3">Detalles de lo que desea cotizar</textarea>
-                                </div>    
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="terms-conditions" required>
-                                        <label class="form-check-label" for="terms-conditions">
-                                            Acepto términos y condiciones
-                                        </label>
-                                    </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="terms-conditions" required>
+                                    <label class="form-check-label" for="terms-conditions">
+                                        Acepto términos y condiciones
+                                    </label>
                                 </div>
-                            </div>        
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
-                    </section>
-                    <section class="why-us col-md-6">
-                        <hgroup>
-                            <h3>Por que elegirnos</h3><hr><h2>Cómo trabajamos</h2>
-                        </hgroup>
-                        <ul>
-                            <li>Característica 1</li>
-                            <li>Característica 2</li>
-                            <li>Característica 3</li>
-                            <li>Característica 4</li>
-                            <li>Característica 5</li>
-                        </ul>
-                    </section>
-                </div>
-            
-                <div class="footer col-md-12">
-                    <p>Llamenos a <br>0180009876231</p>
-                    <button>Cotice ya!</button>
-                </div>
-            </section>
-            <section class="brands">
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card">
-                        <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
-                    </div>
-                </div>
-            </section>
-        </main>
-        <aside class="sidebar">
-            <h3>Barra lateral</h3>
-        </aside>
-    </div>
+                            </div>
+                        </div>        
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </section>
+                <section class="why-us col-md-6">
+                    <hgroup>
+                        <h3>Por que elegirnos</h3><hr><h2>Cómo trabajamos</h2>
+                    </hgroup>
+                    <ul>
+                        <li>Característica 1</li>
+                        <li>Característica 2</li>
+                        <li>Característica 3</li>
+                        <li>Característica 4</li>
+                        <li>Característica 5</li>
+                    </ul>
+                </section>
+            </div>
+        
+            <div class="footer col-md-12">
+                <p>Llamenos a <br>0180009876231</p>
+                <button>Cotice ya!</button>
+            </div>
+        </div>    
+    </section>
 
-
+    <section class="brands">
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/200/100" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">

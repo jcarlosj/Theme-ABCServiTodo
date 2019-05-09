@@ -23,7 +23,8 @@ function js() {
     return src(
             [ 
                 './node_modules/jquery/dist/jquery.min.js',
-                './node_modules/bootstrap/dist/js/bootstrap.min.js' 
+                './node_modules/bootstrap/dist/js/bootstrap.min.js',
+                './src/assets/js/carousel.js'  
             ]
         )
         .pipe( dest( './dist/assets/js' ) )
@@ -61,7 +62,8 @@ function serve() {
     watch(
         [
             './node_modules/boostrap/scss/bootstrap.scss',
-            './src/assets/scss/*.scss'
+            './src/assets/scss/*.scss',
+            './src/assets/js/*.js'
         ],
         series( scss )
     );

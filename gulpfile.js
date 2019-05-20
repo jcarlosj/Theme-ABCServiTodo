@@ -10,7 +10,7 @@ function scss() {
     return src(
             [ 
                 './node_modules/bootstrap/scss/bootstrap.scss',
-                './src/assets/scss/*.scss' 
+                './src/assets/scss/**/**/*.scss' 
             ]
         )
         .pipe( sass() )
@@ -62,7 +62,7 @@ function serve() {
     watch(
         [
             './node_modules/boostrap/scss/bootstrap.scss',
-            './src/assets/scss/*.scss',
+            './src/assets/scss/**/**/*.scss',
             './src/assets/js/*.js'
         ],
         series( scss )

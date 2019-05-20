@@ -1,0 +1,34 @@
+.info {
+    border-left: 3px solid #f77a7a;
+
+    &:first-child{
+        border: none;           
+    }
+
+    h3 {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    h3, p {
+        color: darken( #8e8e8e, 10% );
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    @include media-md {
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+    
+        p {
+            font-size: .9rem;
+        }
+    }
+
+}

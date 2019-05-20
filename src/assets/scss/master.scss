@@ -1,28 +1,5 @@
-$bg-row-color: #F2F2F2;
-$color-text: gray;
-$color-text-light: $bg-row-color;
-$color-h2: darken( $color-text, 20% );
-
-body {
-    color: $color-text;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-}
-
-hr {
-    background-color: darken( $color-text, 10% );
-    height: 1px;
-}
-
-.row {
-    //background-color: lighten($color: green, $amount: 50% );
-    height: auto;
-
-    & div {
-        background-color: white;
-        //border: 1px dotted gray;
-        //box-sizing: border-box;
-    }
-}
+@import 'abstracts/abstracts';
+@import 'debug/debug';
+@import 'layout/layout';
+@import 'components/components';
+@import 'vendors/vendors';

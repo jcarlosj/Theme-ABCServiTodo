@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,105 +11,136 @@
     <link rel="stylesheet" href="./dist/assets/css/master.css">
     <link rel="stylesheet" href="./dist/assets/css/carousel.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="container d-flex flex-column">
-            <nav class="btn-toolbar d-flex justify-content-end header__top" role="toolbar" aria-label="Toolbar with button groups"">
-                <ul class="btn-group nav menu-secondary" role="group" aria-label="First group">
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Tarjeta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Pago</a>
-                    </li>
-                </ul>
-                <ul class="btn-group nav menu-social" role="group" aria-label="Second group">
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Facebook</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Twitter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Google+</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-link nav-link" href="#">Pinterest</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="d-flex justify-content-between navbar navbar-expand-lg header__middle">
-                <img src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
-                <ul class="info-site list-inline">
-                    <li class="info-site__email list-inline-item">Escribamos <br>info@correo.co</li>
-                    <li class="info-site__email list-inline-item">Llamenos <br>0800.123.456789</li>
-                    <li class="info-site__email list-inline-item">Horario <br>L - V | 09:00 - 19:00</li>
-                </ul>
-            </nav>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Departamentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Contacto</a>
-                    </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cotice ahora!</button>
-                    </form>
+        <section class="header__top">
+            <div class="container">
+
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-12.col-md-8">
+
+                        <section class="menu-secondary">
+                            <nav class="btn-toolbar d-flex justify-content-end header__top" role="toolbar" aria-label="Toolbar with button groups"">
+                                <ul class=" btn-group nav menu-secondary" role="group" aria-label="First group">
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Tienda</a></li>
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Tarjeta</a></li>
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Pago</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+
+                    </div>
+                    <div class="col-12.col-md-4">
+
+                        <section class="menu-social">
+                            <nav class="btn-toolbar d-flex justify-content-end header__top" role="toolbar"
+                                aria-label="Toolbar with button groups"">
+                                <ul class=" btn-group nav menu-social" role="group" aria-label="Second group">
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Facebook</a></li>
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Twitter</a></li>
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Google+</a></li>
+                                    <li class="nav-item"><a class="btn btn-link nav-link" href="#">Pinterest</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+
+                    </div> 
+                </div>    
+            </div>
+        </section>
+
+        <section class="header__middle">
+            <div class="container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12.col-md-4">
+                        <img class="img-fluid" src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
+                    </div>
+                    <div class="col-12.col-md-8">
+                        <ul class="info-group list-inline">
+                            <li class="info list-inline-item">
+                                <h3>Escribanos a</h3>
+                                <p>info@correo.co</a>
+                            </li>
+                            <li class="info list-inline-item">
+                                <h3>Llamenos a</h3>
+                                <p>0800.123.456789</a>
+                            </li>
+                            <li class="info list-inline-item">
+                                <h3>Horario</h3>
+                                <p>L - V | 09:00 - 19:00</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-        </div>
+
+            </div>
+        </section>
+
+        <section class="header__bottom">
+            <div class="container">
+
+                <div class="row justify-content-center justify-content-md-start align-items-center">
+                    <div class="col-12.col-md-10">
+                        
+                            <nav class="navbar navbar-expand-md navbar-dark justify-content-center">
+                                <button class="navbar-toggler mb-4" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div id="menu-main" class="collapse navbar-collapse justify-content-center justify-content-lg-end">
+                                    <ul class="menu navbar-nav text-center text-uppercase">
+                                        <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                                        <li><a class="nav-link" href="./blog.html">Blog</a></li>
+                                        <li><a class="nav-link" href="./clases.html">Clases</a></li>
+                                        <li><a class="nav-link" href="./galeria.html">Galería</a></li>
+                                        <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                                        <li><a class="nav-link my-2 my-sm-0">Cotice ahora!</a></li>
+                                    </ul>  <!-- #menu-main -->
+                                </div>  <!-- .navbar -->
+                            </nav>  <!-- .nav -->
+
+                    </div>
+                </div>    
+
+            </div>
+        </section>
     </header>
+
 
     <section class="our-services">
 
         <div class="container">
             <hgroup>
-                <h3>Qué podemos ofrecer</h3><hr><h2>Nuestros servicios</h2>
+                <h3>Qué podemos ofrecer</h3>
+                <hr>
+                <h2>Nuestros servicios</h2>
             </hgroup>
             <div id="carousel-services" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner card-deck row w-100 mx-auto" role="listbox">
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1026/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/1.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img1">
+                            <img src="./dist/assets/images/services/1.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img1">
                             <div class="card-body">
-                              <h5 class="card-title">Servicio 1</h5>
-                              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Servicio 1</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/103/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/2.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img2">
+                            <img src="./dist/assets/images/services/2.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img2">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 2</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
@@ -116,10 +148,13 @@
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/3.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img3">
+                            <img src="./dist/assets/images/services/3.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img3">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 3</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
@@ -127,56 +162,71 @@
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/4.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img4">
+                            <img src="./dist/assets/images/services/4.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img4">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 4</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/5.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img5">
+                            <img src="./dist/assets/images/services/5.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img5">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 5</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/6.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img6">
+                            <img src="./dist/assets/images/services/6.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img6">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 6</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/7.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img7">
+                            <img src="./dist/assets/images/services/7.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img7">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 7</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/8.jpg" class="card-img-top img-fluid mx-auto d-block" alt="img8">
+                            <img src="./dist/assets/images/services/8.jpg"
+                                class="card-img-top img-fluid mx-auto d-block" alt="img8">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 8</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>    
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -199,16 +249,18 @@
                 <div class="row">
                     <section class="quote-form col-md-6">
                         <hgroup>
-                            <h3>Cotice ahora</h3><hr><h2>Cuentenos que desea</h2>
+                            <h3>Cotice ahora</h3>
+                            <hr>
+                            <h2>Cuentenos que desea</h2>
                         </hgroup>
-        
+
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <input type="text" class="form-control" id="name" placeholder="Nombre">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
+                                    <input type" class="form-control" id="email" placeholder="Correo electrónico">
                                 </div>
                             </div>
                             <div class="form-row">
@@ -235,28 +287,32 @@
                                         <label class="custom-file-label" for="files">Adjuntar archivo...</label>
                                     </div>
                                 </div>
-                            </div>    
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <textarea class="form-control" id="details" rows="3">Detalles de lo que desea cotizar</textarea>
-                                </div>    
+                                    <textarea class="form-control" id="details"
+                                        rows="3">Detalles de lo que desea cotizar</textarea>
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="terms-conditions" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="terms-conditions"
+                                            required>
                                         <label class="form-check-label" for="terms-conditions">
                                             Acepto términos y condiciones
                                         </label>
                                     </div>
                                 </div>
-                            </div>        
+                            </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                     </section>
                     <section class="why-us col-md-6">
                         <hgroup>
-                            <h3>Por que elegirnos</h3><hr><h2>Cómo trabajamos</h2>
+                            <h3>Por que elegirnos</h3>
+                            <hr>
+                            <h2>Cómo trabajamos</h2>
                         </hgroup>
                         <ul>
                             <li>Característica 1</li>
@@ -267,7 +323,7 @@
                         </ul>
                     </section>
                 </div>
-            
+
                 <div class="footer col-md-12">
                     <p>Llamenos a <br>0180009876231</p>
                     <button>Cotice ya!</button>
@@ -305,29 +361,36 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
-                    <p>Itaque tempore nisi eaque esse sint! Animi nostrum exercitationem mollitia, repudiandae dolores illum cumque ducimus rerum error?</p>
+                    <p>Itaque tempore nisi eaque esse sint! Animi nostrum exercitationem mollitia, repudiandae dolores
+                        illum cumque ducimus rerum error?</p>
                 </div>
-                <div class="col-md-4">                   
+                <div class="col-md-4">
                     <hgroup>
-                        <h3>Para estar en contacto</h3><hr><h2>Nuestros datos</h2>
+                        <h3>Para estar en contacto</h3>
+                        <hr>
+                        <h2>Nuestros datos</h2>
                     </hgroup>
                     <ul class="info-site">
                         <li><strong>Teléfono: </strong> +1 123 456 789</li>
                         <li><strong>Correo: </strong> info@correo.co</li>
                         <li><strong>Dirección: </strong> Avenida Siempre Viva, Springfield USA</li>
-                    </ul> 
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <hgroup>
-                        <h3>Mantente al tanto</h3><hr><h2>Registrate a nuestro boletín</h2>
+                        <h3>Mantente al tanto</h3>
+                        <hr>
+                        <h2>Registrate a nuestro boletín</h2>
                     </hgroup>
                     <p>Podrás mantenerte al tanto de toda nuestra información relevante</p>
 
                     <form>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                            <input type="text" class="form-control" placeholder="Correo electrónico"
+                                aria-label="Correo electrónico" aria-describedby="button-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Registrar</button>
+                                <button class="btn btn-outline-secondary" type="button"
+                                    id="button-addon2">Registrar</button>
                             </div>
                         </div>
                     </form>
@@ -345,7 +408,7 @@
                         <li class="nav-item">
                             <a class="btn btn-link nav-link" href="#">Pinterest</a>
                         </li>
-                    </ul>   
+                    </ul>
                 </div>
                 <p>(c) 2019 ABC ServiTodo</p>
             </div>
@@ -356,4 +419,5 @@
     <script src="./dist/assets/js/bootstrap.min.js"></script>
     <script src="./dist/assets/js/carousel.js"></script>
 </body>
+
 </html>

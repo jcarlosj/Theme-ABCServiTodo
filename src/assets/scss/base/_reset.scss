@@ -1,0 +1,21 @@
+/* Reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Font Awesome 5 Free";
+}
+
+html,
+body,
+ul,
+ol,
+li {
+  margin:  0;
+  padding: 0;
+}

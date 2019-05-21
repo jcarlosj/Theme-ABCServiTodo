@@ -26,48 +26,77 @@
     }
 }
 
-.menu {
-    &-main {
-        .nav-link {
-            color: #F3F3F5 ! important;
-    
-            &:link {
+.header {
+    .menu {
+        &-main {
+            .nav-link {
                 color: #F3F3F5 ! important;
-            }
-            &:visited {
-                color: #FFFFFF ! important;
-            }
-            &:focus {
-                color: #FFFFFF ! important;
-            }
-            &:hover {
-                color: #FFFFFF ! important;
-            }
-            &:active {
-                color: darken( #F3F3F5, 10% ) ! important;
+        
+                &:link {
+                    color: #F3F3F5 ! important;
+                }
+                &:visited {
+                    color: #FFFFFF ! important;
+                }
+                &:focus {
+                    color: #FFFFFF ! important;
+                }
+                &:hover {
+                    color: #FFFFFF ! important;
+                }
+                &:active {
+                    color: darken( #F3F3F5, 10% ) ! important;
+                }
             }
         }
-    }
-
-    &-secondary {
-        .nav-link {
-            color: rgba(26, 113, 177, 1) ! important;
     
-            &:link {
+        &-secondary {
+            .nav-link {
                 color: rgba(26, 113, 177, 1) ! important;
+        
+                &:link {
+                    color: rgba(26, 113, 177, 1) ! important;
+                }
+                &:visited {
+                    color: rgba(26, 113, 177, 1) ! important;
+                }
+                &:focus {
+                    color: rgba(26, 113, 177, 1) ! important;
+                }
+                &:hover {
+                    color: rgba(26, 113, 177, 1) ! important;
+                }
+                &:active {
+                    color: #262626 ! important;
+                }
             }
-            &:visited {
-                color: rgba(26, 113, 177, 1) ! important;
-            }
-            &:focus {
-                color: rgba(26, 113, 177, 1) ! important;
-            }
-            &:hover {
-                color: rgba(26, 113, 177, 1) ! important;
-            }
-            &:active {
-                color: #262626 ! important;
+        }
+    }        
+}
+
+.footer {
+    .menu {
+        &-main {
+            .nav-link {
+                color: #F3F3F5 ! important;
+        
+                &:link {
+                    color: #F3F3F5 ! important;
+                }
+                &:visited {
+                    color: #FFFFFF ! important;
+                }
+                &:focus {
+                    color: #FFFFFF ! important;
+                }
+                &:hover {
+                    color: #FFFFFF ! important;
+                }
+                &:active {
+                    color: darken( #F3F3F5, 10% ) ! important;
+                }
             }
         }
     }
+    
 }

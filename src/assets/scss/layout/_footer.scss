@@ -1,0 +1,21 @@
+.footer {
+    border-top: 6px solid rgba(26, 113, 177, 1);
+
+    &__top {
+        background-color: #F3F3F5; 
+
+        .widgets {
+            padding: 3.6rem 0;
+        }
+    }
+    &__middle {
+        background-color: #FFFFFF; 
+    }
+    &__bottom {
+        background-color: rgba(26, 113, 177, 1);
+
+        .copyright {
+            color: #FFFFFF;
+        }
+    }
+}

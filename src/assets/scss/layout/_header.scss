@@ -1,5 +1,5 @@
 .header {
-    border-top: 6px solid #f77a7a;
+    border-top: 6px solid rgba(26, 113, 177, 1);
 
     &__top {
         background-color: #F3F3F5; 
@@ -8,6 +8,6 @@
         background-color: #FFFFFF; 
     }
     &__bottom {
-        background-color: #f77a7a; 
+        background-color: rgba(26, 113, 177, 1)
     }
 }

@@ -1,0 +1,73 @@
+// Reset/Bootstrap
+
+.btn {
+
+    &-link {
+        color: #262626;
+    }
+
+    &-outline-success {
+
+        background-color: red;
+        border-color: red;
+        color: #FFFFFF;
+
+        &:hover {
+            
+        }
+    }        
+}
+
+.nav-link {
+    color: #262626 ! important;
+
+    &:hover {
+        color: #262626 ! important;
+    }
+}
+
+.menu {
+    &-main {
+        .nav-link {
+            color: #F3F3F5 ! important;
+    
+            &:link {
+                color: #F3F3F5 ! important;
+            }
+            &:visited {
+                color: #FFFFFF ! important;
+            }
+            &:focus {
+                color: #FFFFFF ! important;
+            }
+            &:hover {
+                color: #FFFFFF ! important;
+            }
+            &:active {
+                color: darken( #F3F3F5, 10% ) ! important;
+            }
+        }
+    }
+
+    &-secondary {
+        .nav-link {
+            color: rgba(26, 113, 177, 1) ! important;
+    
+            &:link {
+                color: rgba(26, 113, 177, 1) ! important;
+            }
+            &:visited {
+                color: rgba(26, 113, 177, 1) ! important;
+            }
+            &:focus {
+                color: rgba(26, 113, 177, 1) ! important;
+            }
+            &:hover {
+                color: rgba(26, 113, 177, 1) ! important;
+            }
+            &:active {
+                color: #262626 ! important;
+            }
+        }
+    }
+}

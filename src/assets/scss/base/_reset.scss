@@ -1,4 +1,4 @@
-/* Reset */
+// Reset/Normalize
 html {
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Rubik', sans-serif;
 }
 
 html,

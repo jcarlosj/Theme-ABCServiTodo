@@ -1,5 +1,5 @@
 .info {
-    border-left: 3px solid #f77a7a;
+    border-left: 3px solid #262626;
 
     &:first-child{
         border: none;           
@@ -8,6 +8,7 @@
     h3 {
         font-size: .8rem;
         font-weight: 700;
+        text-transform: uppercase;
     }
 
     p {
@@ -15,14 +16,15 @@
     }
 
     h3, p {
-        color: darken( #8e8e8e, 10% );
+        color: lighten( #262626, 15% );
         margin: 0;
-        padding-left: 1rem;
+        padding: 0 1rem;
+        text-align: center;
     }
 
     @include media-md {
         h3 {
-            font-size: 1.1rem;
+            font-size: .9rem;
             font-weight: 700;
         }
     

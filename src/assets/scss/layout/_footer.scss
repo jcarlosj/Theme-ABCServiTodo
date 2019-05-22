@@ -8,14 +8,20 @@
             padding: 3.6rem 0;
         }
     }
-    &__middle {
-        background-color: #FFFFFF; 
-    }
     &__bottom {
         background-color: rgba(26, 113, 177, 1);
 
         .copyright {
             color: #FFFFFF;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
         }
     }
 }

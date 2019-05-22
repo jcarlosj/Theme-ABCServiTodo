@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./dist/assets/css/carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.png" sizes="128x128" />
 </head>
 
 <body>
@@ -84,23 +85,23 @@
             <div class="container">
 
                 <div class="row justify-content-center justify-content-md-start align-items-center">
-                    <div class="col-12.col-md-10">
+                    <div class="col-12 col-md-10">
                         
-                            <nav class="navbar navbar-expand-md navbar-dark justify-content-center">
-                                <button class="navbar-toggler mb-4" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div id="menu-main" class="collapse navbar-collapse justify-content-center justify-content-lg-end menu-main">
-                                    <ul class="menu navbar-nav text-center text-uppercase">
-                                        <li><a class="nav-link" href="#">Nosotros</a></li>
-                                        <li><a class="nav-link" href="#">Blog</a></li>
-                                        <li><a class="nav-link" href="#">Clases</a></li>
-                                        <li><a class="nav-link" href="#">Galería</a></li>
-                                        <li><a class="nav-link" href="#">Contacto</a></li>
-                                        <li><a class="nav-link my-2 my-sm-0" href="#">Cotice ahora!</a></li>
-                                    </ul>  <!-- #menu-main -->
-                                </div>  <!-- .navbar -->
-                            </nav>  <!-- .nav -->
+                        <nav class="navbar navbar-expand-md navbar-dark">
+                            <button class="navbar-toggler my-1" type="button" data-toggle="collapse" data-target="#menu-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="menu-main" class="collapse navbar-collapse justify-content-md-start menu-main">
+                                <ul class="menu navbar-nav text-uppercase">
+                                    <li><a class="nav-link" href="#">Nosotros</a></li>
+                                    <li><a class="nav-link" href="#">Blog</a></li>
+                                    <li><a class="nav-link" href="#">Clases</a></li>
+                                    <li><a class="nav-link" href="#">Galería</a></li>
+                                    <li><a class="nav-link" href="#">Contacto</a></li>
+                                    <li><a class="nav-link my-2 my-sm-0" href="#">Cotice ahora!</a></li>
+                                </ul>  <!-- #menu-main -->
+                            </div>  <!-- .navbar -->
+                        </nav>  <!-- .nav -->
 
                     </div>
                 </div>    
@@ -361,12 +362,19 @@
             <div class="container">
 
                 <div class="row widgets">
-                    <div class="col-md-4">
-                        <img src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
-                        <p>Itaque tempore nisi eaque esse sint! Animi nostrum exercitationem mollitia, repudiandae dolores
-                            illum cumque ducimus rerum error?</p>
+                    <div class="col-md-4 my-3 my-md-0">
+
+                        <div class="row">
+                            <div class="col-5 col-md-12">
+                                <img class="img-fluid" src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
+                            </div>
+                            <div class="col-7 col-md-12">
+                                <p>Itaque tempore nisi eaque esse sint! Animi nostrum exercitationem mollitia, repudiandae dolores illum cumque ducimus rerum error?</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 my-3 my-md-0">
                         <hgroup>
                             <h3>Para estar en contacto</h3>
                             <hr>
@@ -378,7 +386,7 @@
                             <li><strong>Dirección: </strong> Avenida Siempre Viva, Springfield USA</li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 my-3 my-md-0">
                         <hgroup>
                             <h3>Mantente al tanto</h3>
                             <hr>
@@ -396,13 +404,14 @@
                                 </div>
                             </div>
                         </form>
-    
-                        <ul class="btn-group nav menu-social">
-                            <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.facebook.com"><span class="social--without-text">Facebook</span></a></li>
-                            <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.twitter.com"><span class="social--without-text">Twitter</span></a></li>
-                            <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.instagram.com"><span class="social--without-text">Instagram</span></a></li>
-                            <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.pinterest.com"><span class="social--without-text">Pinterest</span></a></li>
-                        </ul>
+                        <nav class="d-flex justify-content-center">
+                            <ul class="btn-group nav menu-social">
+                                <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.facebook.com"><span class="social--without-text">Facebook</span></a></li>
+                                <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.twitter.com"><span class="social--without-text">Twitter</span></a></li>
+                                <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.instagram.com"><span class="social--without-text">Instagram</span></a></li>
+                                <li class="nav-item"><a class="btn btn-link nav-link" href="https://www.pinterest.com"><span class="social--without-text">Pinterest</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
 
@@ -417,11 +426,11 @@
 
                         <nav class="menu-main">
                             <ul class="menu navbar navbar-nav d-flex flex-column flex-md-row text-center text-md-left text-uppercase">
-                                <li><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-                                <li><a class="nav-link" href="./blog.html">Blog</a></li>
-                                <li><a class="nav-link" href="./clases.html">Clases</a></li>
-                                <li><a class="nav-link" href="./galeria.html">Galería</a></li>
-                                <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                                <li><a class="nav-link" href="#">Nosotros</a></li>
+                                <li><a class="nav-link" href="#">Blog</a></li>
+                                <li><a class="nav-link" href="#">Clases</a></li>
+                                <li><a class="nav-link" href="#">Galería</a></li>
+                                <li><a class="nav-link" href="#">Contacto</a></li>
                             </ul>  <!-- #menu-main -->
                         </nav>  <!-- .nav -->
 

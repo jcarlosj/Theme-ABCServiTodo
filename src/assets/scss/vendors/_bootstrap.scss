@@ -51,22 +51,38 @@
 
 // Menues del sitio
 .header {
+    .navbar-dark .navbar-toggler {
+        color: #523D6C;
+        border-color: #523D6C;
+    }
     .menu {
         &-main {
             .nav-link {
-                color: #F3F3F5 ! important;
+                color: #523D6C ! important;
         
                 &:link {
-                    color: #F3F3F5 ! important;
+                    color: #523D6C ! important;
                 }
                 &:visited {
-                    color: #FFFFFF ! important;
+                    color: #523D6C ! important;
+
+                    @include media-md { 
+                        color: #FFFFFF ! important;
+                    }
                 }
                 &:focus {
-                    color: #FFFFFF ! important;
+                    color: #523D6C ! important;
+                    
+                    @include media-md { 
+                        color: #FFFFFF ! important;
+                    }
                 }
                 &:hover {
-                    color: #FFFFFF ! important;
+                    color: #523D6C ! important;
+                    
+                    @include media-md { 
+                        color: rgba(26, 113, 177, 1) ! important;
+                    }
                 }
                 &:active {
                     color: darken( #F3F3F5, 10% ) ! important;

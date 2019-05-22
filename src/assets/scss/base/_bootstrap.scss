@@ -1,31 +1,55 @@
 // Reset/Bootstrap
 
+// Botones del sitio 
 .btn {
 
     &-link {
         color: #262626;
     }
 
+    &-primary {
+        background-color: #f77a7a ! important;
+        border-color: #f77a7a ! important;
+    
+        &:hover {
+            background-color: #523D6C ! important;
+            border-color: #523D6C ! important;
+        }
+
+        &:focus, 
+        &.focus {
+            box-shadow: 0 0 0 0.2rem lighten( #f77a7a, 5% ) ! important;
+        }
+        &.disabled, 
+        &:disabled {
+            background-color: lighten( #262626, 5% ) ! important;
+            border-color: lighten( #262626, 5% ) ! important;
+        }
+
+        &:not(:disabled):not(.disabled):active, 
+        &:not(:disabled):not(.disabled).active,
+        .show > &.dropdown-toggle {
+            background-color: rgba(26, 113, 177, 1) ! important;
+            border-color: rgba(26, 113, 177, 1) ! important;
+        }
+
+        &:not(:disabled):not(.disabled):active:focus, 
+        &:not(:disabled):not(.disabled).active:focus,
+        .show > &.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem lighten( rgba(26, 113, 177, 1), 5% ) ! important; 
+        }
+    }   
+
     &-outline-success {
 
         background-color: red;
         border-color: red;
         color: #FFFFFF;
-
-        &:hover {
-            
-        }
-    }        
+    }    
+    
 }
 
-.nav-link {
-    color: #262626 ! important;
-
-    &:hover {
-        color: #262626 ! important;
-    }
-}
-
+// Menues del sitio
 .header {
     .menu {
         &-main {

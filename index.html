@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./dist/assets/css/bootstrap.css">
     <link rel="stylesheet" href="./dist/assets/css/master.css">
     <link rel="stylesheet" href="./dist/assets/css/carousel.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Rubik:300,400,500,700,900|Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" href="./favicon.png" sizes="128x128" />
 </head>
@@ -58,7 +58,9 @@
 
                 <div class="row justify-content-between align-items-center">
                     <div class="col-12 col-md-4 d-flex justify-content-start">
-                        <img class="img-fluid mx-auto" src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
+                        <a class="logo" href="#">
+                            <img class="img-fluid mx-auto" src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
+                        </a>    
                     </div>
                     <div class="col-12 col-md-8 d-none d-md-block">
                         <ul class="info-group list-inline d-flex justify-content-end">
@@ -116,7 +118,6 @@
         <div class="container">
             <hgroup>
                 <h3>Qué podemos ofrecer</h3>
-                <hr>
                 <h2>Nuestros servicios</h2>
             </hgroup>
             <div id="carousel-services" class="carousel slide" data-ride="carousel">
@@ -220,7 +221,7 @@
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card">
                             <!--img src="https://picsum.photos/id/1051/360/220" class="card-img-top img-fluid mx-auto d-block" alt="..."-->
-                            <img src="./dist/assets/images/services/8.jpg"
+                            <img src="./dist/assets/images/services/8.jpg" 
                                 class="card-img-top img-fluid mx-auto d-block" alt="img8">
                             <div class="card-body">
                                 <h5 class="card-title">Servicio 8</h5>
@@ -244,7 +245,6 @@
         </div>
     </section><!-- .our-services -->
 
-
     <div class="container">
         <main class="main-content">
             <section class="why-us">
@@ -252,7 +252,6 @@
                     <section class="quote-form col-md-6">
                         <hgroup>
                             <h3>Cotice ahora</h3>
-                            <hr>
                             <h2>Cuentenos que desea</h2>
                         </hgroup>
 
@@ -313,7 +312,6 @@
                     <section class="why-us col-md-6">
                         <hgroup>
                             <h3>Por que elegirnos</h3>
-                            <hr>
                             <h2>Cómo trabajamos</h2>
                         </hgroup>
                         <ul>
@@ -327,7 +325,10 @@
                 </div>
 
                 <div class="col-md-12">
-                    <p>Llamenos a <br>0180009876231</p>
+                    <hgroup>
+                        <h3>Llamenos a</h3>
+                        <h2>0180009876231</h2>
+                    </hgroup>
                     <button>Cotice ya!</button>
                 </div>
             </section>
@@ -363,7 +364,10 @@
 
                 <div class="row widgets">
                     <div class="col-md-4 my-3 my-md-0">
-
+                        <hgroup>
+                            <h3>Conócenos</h3>
+                            <h2>Nuestro Equipo</h2>
+                        </hgroup>
                         <div class="row">
                             <div class="col-5 col-md-12">
                                 <img class="img-fluid" src="./dist/assets/images/logo-abcservitodo.png" alt="ABC ServiTodo">
@@ -377,7 +381,6 @@
                     <div class="col-md-4 my-3 my-md-0">
                         <hgroup>
                             <h3>Para estar en contacto</h3>
-                            <hr>
                             <h2>Nuestros datos</h2>
                         </hgroup>
                         <ul class="info-site">
@@ -389,7 +392,6 @@
                     <div class="col-md-4 my-3 my-md-0">
                         <hgroup>
                             <h3>Mantente al tanto</h3>
-                            <hr>
                             <h2>Registrate a nuestro boletín</h2>
                         </hgroup>
                         <p>Podrás mantenerte al tanto de toda nuestra información relevante</p>
@@ -399,8 +401,8 @@
                                 <input type="text" class="form-control" placeholder="Correo electrónico"
                                     aria-label="Correo electrónico" aria-describedby="button-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                        id="button-addon2">Registrar</button>
+                                    <button class="btn btn-primary" type="button"
+                                        id="btn-register">Registrar</button>
                                 </div>
                             </div>
                         </form>

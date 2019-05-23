@@ -63,9 +63,10 @@ function serve() {
         [
             './node_modules/boostrap/scss/bootstrap.scss',
             './src/assets/scss/**/**/**/**/*.scss',
-            './src/assets/js/*.js'
+            './src/assets/js/*.js',
+            './src/assets/images/*.{jpg,jpeg,png,gif,svg}}'
         ],
-        series( scss )
+        series( scss ,js, images )
     );
     watch( '*.html' ) .on( 'change', browserSync .reload );
 }

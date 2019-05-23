@@ -5,8 +5,22 @@
         padding: 0;
 
         .card {
+            line-height: 1.4rem;
             margin: 0 .5rem;
             text-align: center;
+
+            &-body {
+                padding: 2.2rem .6rem 1rem .6rem;
+            }
+
+            &-title {
+                color: #523D6C;
+                font-weight: 700;
+            }
+
+            &-text {
+                margin: .3rem 0;
+            }
 
             &--image {
                 position: relative;
@@ -15,6 +29,7 @@
             }
 
             &--icon {
+                background-color: #FFFFFF;
                 border-radius: 2rem;
                 margin: 0 auto;
                 padding: .5rem;
@@ -29,10 +44,6 @@
                 //margin-bottom: auto;
                 width: 3.4rem;
                 //height: 3.4rem;
-            }
-
-            &-title {
-                font-weight: 700;
             }
         }
     }

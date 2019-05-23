@@ -1,0 +1,38 @@
+.header {
+    
+    .logo {
+        &--inside-menu {
+            width: 36%;
+        }
+        &--small {
+            background-image: url( '../images/logo-abcservitodo.png' );
+            background-position: -8px center;
+            background-repeat: no-repeat;
+            //border: 1px solid blue;
+            height: 32px;
+            width: 210px;
+        }
+    }
+    
+    .btn {
+
+        &__action {
+            width: 10rem;    
+        }
+        &__inside--menu {
+            display: block;
+            
+            @include media-md {
+                display: none;
+            }
+        }
+        &__outside--menu {
+            display: none;
+            
+            @include media-md {
+                display: block;
+            }
+        }
+        
+    }
+}

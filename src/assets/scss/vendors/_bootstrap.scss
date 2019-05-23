@@ -10,10 +10,12 @@
     &-primary {
         background-color: #f77a7a ! important;
         border-color: #f77a7a ! important;
+        color: #F8F5F2;
     
         &:hover {
             background-color: #523D6C ! important;
             border-color: #523D6C ! important;
+            color: #F8F5F2;
         }
 
         &:focus, 
@@ -58,30 +60,40 @@
     .menu {
         &-main {
             .nav-link {
-                color: #523D6C ! important;
+                color:#FFFFFF ! important;
+                font-weight: 500;
+
+                @include media-md { 
+                    color: #FFFFFF ! important;
+                    font-weight: normal;
+                }
         
                 &:link {
-                    color: #523D6C ! important;
+                    color:rgba(26, 113, 177, 1) ! important;
+
+                    @include media-md { 
+                        color: #FFFFFF ! important;
+                    }
                 }
                 &:visited {
-                    color: #523D6C ! important;
+                    color:rgba(26, 113, 177, 1) ! important;
 
                     @include media-md { 
                         color: #FFFFFF ! important;
                     }
                 }
                 &:focus {
-                    color: #523D6C ! important;
+                    color:rgba(26, 113, 177, 1) ! important;
                     
                     @include media-md { 
-                        color: #FFFFFF ! important;
+                        color: #F8F5F2 ! important;
                     }
                 }
                 &:hover {
-                    color: #523D6C ! important;
+                    color: #F8F5F2 ! important;
                     
                     @include media-md { 
-                        color: rgba(26, 113, 177, 1) ! important;
+                        color: #F8F5F2 ! important;
                     }
                 }
                 &:active {
@@ -94,15 +106,9 @@
             .nav-link {
                 color: rgba(26, 113, 177, 1) ! important;
         
-                &:link {
-                    color: rgba(26, 113, 177, 1) ! important;
-                }
-                &:visited {
-                    color: rgba(26, 113, 177, 1) ! important;
-                }
-                &:focus {
-                    color: rgba(26, 113, 177, 1) ! important;
-                }
+                &:link,
+                &:visited,
+                &:focus,
                 &:hover {
                     color: rgba(26, 113, 177, 1) ! important;
                 }
@@ -118,10 +124,10 @@
     .menu {
         &-main {
             .nav-link {
-                color: #F3F3F5 ! important;
+                color: #F8F5F2 ! important;
         
                 &:link {
-                    color: #F3F3F5 ! important;
+                    color: #F8F5F2 ! important;
                 }
                 &:visited {
                     color: #FFFFFF ! important;
@@ -133,7 +139,7 @@
                     color: #FFFFFF ! important;
                 }
                 &:active {
-                    color: darken( #F3F3F5, 10% ) ! important;
+                    color: darken( #F8F5F2, 10% ) ! important;
                 }
             }
         }

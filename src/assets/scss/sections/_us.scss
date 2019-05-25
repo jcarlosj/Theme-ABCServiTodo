@@ -25,6 +25,16 @@
             //padding: 1rem 1.5rem;
             position: absolute;
             width: 90%;
+
+            @include media-md {
+                width: 83%;
+            }
+            @include media-lg {
+                width: 87%;
+            }
+            @include media-xl {
+                width: 89%;
+            }
         }
     }
 
@@ -33,8 +43,9 @@
 
         .btn {
             &__action {
+                font-size: 1.4rem;
                 margin: 0 auto; 
-                width: 10rem;
+                width: 14rem;
             }
         }
     }
@@ -44,10 +55,30 @@
         padding: 1rem 1.5rem;
 
         h2 {
-            font-size: 2.4rem;    
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+
+            @include media-md {
+                font-size: 1.8rem; 
+                line-height: 1.4rem;
+            }
+
+            @include media-lg {
+                font-size: 2.2rem;   
+                line-height: 2rem; 
+            }
         }
         h3 {
-            font-size: 1.8rem;    
+            font-size: 1.2rem;
+
+            @include media-md {
+                font-size: 1.4rem;    
+            }
+
+            @include media-lg {
+                font-size: 1.6rem;    
+            }
+
         }
     }
 }

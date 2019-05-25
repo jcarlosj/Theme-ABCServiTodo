@@ -6,10 +6,28 @@
         text-align: center;
 
         h2 {
-            font-size: 3.4rem;    
+            font-size: 2rem; 
+            line-height: 2rem;   
+
+            @include media-md {
+                font-size: 2.6rem; 
+                line-height: 2.6rem;      
+            }
+
+            @include media-lg {
+                font-size: 3.4rem;    
+            } 
         }
         h3 {
-            font-size: 2.2rem;    
+            font-size: 1.5rem;    
+
+            @include media-md {
+                font-size: 1.8rem;    
+            }
+
+            @include media-lg {
+                font-size: 2.2rem;    
+            }
         }
     }
 }

@@ -61,36 +61,38 @@
         &-main {
             .nav-link {
                 color:#FFFFFF ! important;
-                font-weight: 500;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 600;
 
                 @include media-md { 
                     color: #FFFFFF ! important;
+                    font-family: 'Rubik', sans-serif;
                     font-weight: normal;
                 }
         
                 &:link {
-                    color:rgba(26, 113, 177, 1) ! important;
+                    color:#1a71b1 ! important;
 
                     @include media-md { 
                         color: #FFFFFF ! important;
                     }
                 }
                 &:visited {
-                    color:rgba(26, 113, 177, 1) ! important;
+                    color:#1a71b1 ! important;
 
                     @include media-md { 
                         color: #FFFFFF ! important;
                     }
                 }
                 &:focus {
-                    color:rgba(26, 113, 177, 1) ! important;
+                    color:#1a71b1 ! important;
                     
                     @include media-md { 
                         color: #F8F5F2 ! important;
                     }
                 }
                 &:hover {
-                    color: #F8F5F2 ! important;
+                    color: #1a71b1 ! important;
                     
                     @include media-md { 
                         color: #F8F5F2 ! important;
@@ -98,6 +100,10 @@
                 }
                 &:active {
                     color: darken( #F3F3F5, 10% ) ! important;
+                }
+
+                &.btn__action {
+                    color: #F8F5F2 ! important;
                 }
             }
         }

@@ -1,9 +1,5 @@
 // General
-input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
+
 // Layout
 .row {
     display:flex;
@@ -67,24 +63,30 @@ input {
             color: #f77a7a;
         }
     }
-}
 
-// :checked
-input:checked {
-    + .tab-label {
-        background: #FFFFFF;
-        color: #523D6C;
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
 
-        .fa-check {
-            color: #523D6C;
+        // :checked    
+        &:checked {
+            + .tab-label {
+                background: #FFFFFF;
+                color: #523D6C;
+        
+                .fa-check {
+                    color: #523D6C;
+                }
+        
+                &::after {
+                    transform: rotate( 90deg );
+                }
+            }
+            ~ .tab-content {
+                max-height: 100vh;
+                padding: 1em;
+            }
         }
-
-        &::after {
-            transform: rotate( 90deg );
-        }
-    }
-    ~ .tab-content {
-        max-height: 100vh;
-        padding: 1em;
     }
 }

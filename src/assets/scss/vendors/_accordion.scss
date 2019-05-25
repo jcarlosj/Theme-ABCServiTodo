@@ -1,0 +1,90 @@
+// General
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+// Layout
+.row {
+    display:flex;
+        .col {
+            flex:1;
+        &:last-child {
+            margin-left: 1em;
+        }
+    }
+}
+/* Accordion styles */
+.tabs {
+    overflow: hidden;
+    padding: .4rem 0; 
+}
+.tab {
+    width: 100%;
+    color: #8F849C;
+    overflow: hidden;
+
+    &-label {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: start;
+        padding: .6em;
+        cursor: pointer;
+        margin: .2em 0;
+
+        .fa-check {
+            color: #f77a7a;
+            font-weight: 700;
+            padding-right: .8rem;
+        }
+
+        /* Icon */
+        &:hover {
+            color: #523D6C;
+            background: #FFFFFF;
+
+            .fa-check {
+                color: #523D6C;
+            }
+        }
+    }
+    &-content {
+        max-height: 0;
+        padding: 0 1em;
+        background: #FFFFFF;
+        transition: all .35s;
+    }
+    &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 1em;
+        cursor: pointer;
+
+        &:hover {
+            color: #f77a7a;
+        }
+    }
+}
+
+// :checked
+input:checked {
+    + .tab-label {
+        background: #FFFFFF;
+        color: #523D6C;
+
+        .fa-check {
+            color: #523D6C;
+        }
+
+        &::after {
+            transform: rotate( 90deg );
+        }
+    }
+    ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
+    }
+}

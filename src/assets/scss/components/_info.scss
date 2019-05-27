@@ -1,0 +1,36 @@
+.info {
+    border-left: 3px solid #262626;
+
+    &:first-child{
+        border: none;           
+    }
+
+    h3 {
+        color: #523D6C;
+        font-size: .8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    h3, p {
+        margin: 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    @include media-md {
+        h3 {
+            font-size: .9rem;
+            font-weight: 700;
+        }
+    
+        p {
+            font-size: .9rem;
+        }
+    }
+
+}

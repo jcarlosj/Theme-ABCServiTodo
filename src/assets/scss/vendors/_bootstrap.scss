@@ -1,0 +1,154 @@
+// Reset/Bootstrap
+
+// Botones del sitio 
+.btn {
+
+    &-link {
+        color: #262626;
+    }
+
+    &-primary {
+        background-color: #f77a7a ! important;
+        border-color: #f77a7a ! important;
+        color: #F8F5F2;
+    
+        &:hover {
+            background-color: #523D6C ! important;
+            border-color: #523D6C ! important;
+            color: #F8F5F2;
+        }
+
+        &:focus, 
+        &.focus {
+            box-shadow: 0 0 0 0.2rem lighten( #f77a7a, 5% ) ! important;
+        }
+        &.disabled, 
+        &:disabled {
+            background-color: lighten( #262626, 5% ) ! important;
+            border-color: lighten( #262626, 5% ) ! important;
+        }
+
+        &:not(:disabled):not(.disabled):active, 
+        &:not(:disabled):not(.disabled).active,
+        .show > &.dropdown-toggle {
+            background-color: rgba(26, 113, 177, 1) ! important;
+            border-color: rgba(26, 113, 177, 1) ! important;
+        }
+
+        &:not(:disabled):not(.disabled):active:focus, 
+        &:not(:disabled):not(.disabled).active:focus,
+        .show > &.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem lighten( rgba(26, 113, 177, 1), 5% ) ! important; 
+        }
+    }   
+
+    &-outline-success {
+
+        background-color: red;
+        border-color: red;
+        color: #FFFFFF;
+    }    
+    
+}
+
+// Menues del sitio
+.header {
+    .navbar-dark .navbar-toggler {
+        color: #523D6C;
+        border-color: #523D6C;
+    }
+    .menu {
+        &-main {
+            .nav-link {
+                color:#FFFFFF ! important;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 600;
+
+                @include media-md { 
+                    color: #FFFFFF ! important;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: normal;
+                }
+        
+                &:link {
+                    color:#1a71b1 ! important;
+
+                    @include media-md { 
+                        color: #FFFFFF ! important;
+                    }
+                }
+                &:visited {
+                    color:#1a71b1 ! important;
+
+                    @include media-md { 
+                        color: #FFFFFF ! important;
+                    }
+                }
+                &:focus {
+                    color:#1a71b1 ! important;
+                    
+                    @include media-md { 
+                        color: #F8F5F2 ! important;
+                    }
+                }
+                &:hover {
+                    color: #1a71b1 ! important;
+                    
+                    @include media-md { 
+                        color: #F8F5F2 ! important;
+                    }
+                }
+                &:active {
+                    color: darken( #F3F3F5, 10% ) ! important;
+                }
+
+                &.btn__action {
+                    color: #F8F5F2 ! important;
+                }
+            }
+        }
+    
+        &-secondary {
+            .nav-link {
+                color: rgba(26, 113, 177, 1) ! important;
+        
+                &:link,
+                &:visited,
+                &:focus,
+                &:hover {
+                    color: rgba(26, 113, 177, 1) ! important;
+                }
+                &:active {
+                    color: #262626 ! important;
+                }
+            }
+        }
+    }        
+}
+
+.footer {
+    .menu {
+        &-main {
+            .nav-link {
+                color: #F8F5F2 ! important;
+        
+                &:link {
+                    color: #F8F5F2 ! important;
+                }
+                &:visited {
+                    color: #FFFFFF ! important;
+                }
+                &:focus {
+                    color: #FFFFFF ! important;
+                }
+                &:hover {
+                    color: #FFFFFF ! important;
+                }
+                &:active {
+                    color: darken( #F8F5F2, 10% ) ! important;
+                }
+            }
+        }
+    }
+    
+}

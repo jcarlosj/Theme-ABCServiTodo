@@ -1,0 +1,10 @@
+.us {
+    margin: 3rem 0;
+
+    & > div:first-child {
+        background-color: greenyellow;
+    }
+    & > div:last-child {
+        background-color: green;
+    }
+}    

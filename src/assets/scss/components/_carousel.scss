@@ -1,0 +1,51 @@
+.carousel {
+
+    .carousel-item {
+        margin: 0;
+        padding: 0;
+
+        .card {
+            line-height: 1.4rem;
+            margin: 0 .5rem;
+            text-align: center;
+
+            &-body {
+                padding: 2.2rem .6rem 1rem .6rem;
+            }
+
+            &-title {
+                color: #f77a7a;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+            }
+
+            &-text {
+                margin: .3rem 0;
+            }
+
+            &--image {
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            &--icon {
+                background-color: #FFFFFF;
+                border-radius: 2rem;
+                margin: 0 auto;
+                padding: .5rem;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 58%;
+                //margin-bottom: auto;
+                width: 3.4rem;
+                //height: 3.4rem;
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@ function scss() {
     return src(
             [ 
                 './node_modules/bootstrap/scss/bootstrap.scss',
-                './src/assets/scss/*.scss' 
+                './src/assets/scss/**/**/**/**/*.scss' 
             ]
         )
         .pipe( sass() )
@@ -62,10 +62,11 @@ function serve() {
     watch(
         [
             './node_modules/boostrap/scss/bootstrap.scss',
-            './src/assets/scss/*.scss',
-            './src/assets/js/*.js'
+            './src/assets/scss/**/**/**/**/*.scss',
+            './src/assets/js/*.js',
+            './src/assets/images/*.{jpg,jpeg,png,gif,svg}}'
         ],
-        series( scss )
+        series( scss ,js, images )
     );
     watch( '*.html' ) .on( 'change', browserSync .reload );
 }

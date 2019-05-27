@@ -1,0 +1,84 @@
+.us {
+    margin: 3rem 0;
+
+    & > div:first-child {
+       background-color: #F8F5F2;
+       padding: 1rem 0;
+    }
+    & > div:last-child {
+        margin-top: -7.5rem;
+    }
+
+    &__choose-us {
+        hgroup {
+            //border: 1px solid green;
+            background-color: #FFFFFF;
+            margin: 2.5rem .5rem 0 -1rem;
+        }
+    }
+
+    &__we-do-it {
+        hgroup {
+            //border: 1px solid green;
+            background-color: #F8F5F2;
+            margin: 2.4rem;
+            //padding: 1rem 1.5rem;
+            position: absolute;
+            width: 90%;
+
+            @include media-md {
+                width: 83%;
+            }
+            @include media-lg {
+                width: 87%;
+            }
+            @include media-xl {
+                width: 89%;
+            }
+        }
+    }
+
+    &__call-us {
+        background-color: #FFFFFF;
+
+        .btn {
+            &__action {
+                font-size: 1.4rem;
+                margin: 0 auto; 
+                width: 14rem;
+            }
+        }
+    }
+
+    hgroup {
+        text-align: left;
+        padding: 1rem 1.5rem;
+
+        h2 {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+
+            @include media-md {
+                font-size: 1.8rem; 
+                line-height: 1.4rem;
+            }
+
+            @include media-lg {
+                font-size: 2.2rem;   
+                line-height: 2rem; 
+            }
+        }
+        h3 {
+            font-size: 1.2rem;
+
+            @include media-md {
+                font-size: 1.4rem;    
+            }
+
+            @include media-lg {
+                font-size: 1.6rem;    
+            }
+
+        }
+    }
+}

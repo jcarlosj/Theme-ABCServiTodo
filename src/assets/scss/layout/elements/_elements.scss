@@ -1,0 +1,21 @@
+h1, h2, h3 ,h4 ,h5, h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+    color: #523D6C;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 3.6rem;
+}
+h3 {
+    color: #f77a7a;
+}
+
+p, ul {
+    margin-top: 1rem;
+}
+
+
+@import 'hgroups';
+@import 'lists';

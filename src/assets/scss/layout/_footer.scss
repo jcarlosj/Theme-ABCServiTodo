@@ -1,0 +1,40 @@
+.footer {
+
+    &__top {
+        background-color: #F8F5F2; 
+        padding: 2.8rem 0;
+
+        .widgets {
+
+            h2 {
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+    &__bottom {
+        background-color: rgba(26, 113, 177, 1);
+
+        .copyright {
+            color: #FFFFFF;
+        }
+    }
+
+    .menu {
+        &-main {
+            
+            ul {
+                margin: 0;
+                padding-left: 0;
+        
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

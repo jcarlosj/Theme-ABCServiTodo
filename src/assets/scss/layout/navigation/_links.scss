@@ -1,0 +1,27 @@
+a {
+    @include social-icons;
+
+    &::before {
+        font-family: 'Font Awesome 5 Brands';
+        padding-right: .3rem;
+    }
+
+    & .social {
+        &--with {
+            &-text{
+                display: inline;
+            }
+        }
+        &--without {
+            &-text{
+                display: none;
+            }
+        }
+    }
+
+    &:link {}
+    &:visited {}
+    &:focus {}
+    &:hover {}
+    &:active {}
+}

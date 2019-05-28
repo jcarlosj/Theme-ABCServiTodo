@@ -1,0 +1,53 @@
+.page-us {
+    .business {
+
+        &--header {
+            margin-bottom: 1.5rem;
+        }
+
+        & > section {
+            .container {
+                .row {
+                    background-color: #F8F5F2;
+                    margin: 1rem 0;
+                    padding: 1rem 0;
+                }
+            }
+
+            hgroup {
+                background-color: white;
+                margin: .6rem -1rem;
+            }
+
+            &:nth-child( even ) {
+
+                hgroup {
+                    align-self: flex-end; 
+                    padding: .6rem .6rem .6rem 1.8rem;            
+                }
+
+                .content {
+                    order: 2;
+                }
+
+                .image {
+                    order: -1;
+                }
+            }
+
+            &:nth-child( odd ) {
+            
+                hgroup {
+                    align-self: flex-start;
+                    padding: .6rem 1.8rem .6rem .6rem;
+                }
+
+            }
+        } 
+    
+        .content {
+            display: flex;
+            flex-direction: column;
+        }        
+    }
+}

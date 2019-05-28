@@ -1,0 +1,18 @@
+.page {
+    &-header {
+        position: relative;
+    }
+    &--title {
+        background-color: #FFFFFF;
+        margin-top: 2.6rem;
+        padding: 1rem 2rem 1rem .2rem;
+        position: absolute;
+        z-index: 10;
+    }
+
+    &-service {
+        .outstanding-image {
+            position: relative;
+        }
+    }    
+}

@@ -3,18 +3,79 @@
     display: flex;
     flex-direction: column;
     
-    ul { 
-        margin-top: 0;
+    .navbar{
+        //border-top: 12px solid rgb(246, 248, 242);
+        box-sizing: border-box;
+        padding: 0;
+
+        &-primary {
+            //border: 1px solid green;
+            //box-sizing: border-box;
+
+            //background-color: #FFFFFF;
+            padding: 0 1.2rem;
+        }
+        &-secondary {
+            //border: 1px solid green;    
+        }
+
+        @include media-md {
+            border-top: 0;
+        }
+    }
+
+    .menu-main {
+        //border: 1px solid blue;
+        //box-sizing: border-box;
+
+        background-color: #F8F5F2; 
+
+        @include media-md {
+            background-color: #1a71b1; 
+        }
     }
 
     &__top {
         background-color: #F8F5F2; 
-        order: 3;
-        display: none;
+        //order: 3;
+        //display: none;
+
+        .container {
+            padding: 0 !important;
+            max-width: 100%;
+
+            .row {
+                padding: 0 1.2rem;
+            }
+        }
+
+        ul { 
+            margin-top: 0;
+        }
 
         @include media-md {
             order: -1;
             display: block;
+            
+            .container {
+                max-width: 768px;
+            }
+
+            .call-us {
+                display: none;
+            }
+        }
+
+        @include media-lg {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @include media-xl {
+            .container {
+                max-width: 1200px;
+            }
         }
     }
     &__middle {
@@ -23,15 +84,48 @@
 
         @include media-md {
             display: block;
+
+            .container {
+                .row {
+                    > div {
+                        padding: 0;
+                    }
+                }
+            }
         }
     }
     &__bottom {
-        background-color: #F8F5F2;
-        order: -1;
+        //background-color: #F8F5F2;
+        //order: -1;
+
+        .container {
+            padding: 0 !important;
+            max-width: 100%;
+        }
+
+        ul { 
+            margin-top: 0;
+        }
 
         @include media-md {
             background-color: rgba(26, 113, 177, 1);
             order: 3;
+
+            .container {
+                max-width: 768px;
+            }
+        }
+
+        @include media-lg {
+            .container {
+                max-width: 960px;
+            }
+        }
+
+        @include media-xl {
+            .container {
+                max-width: 1200px;
+            }
         }
     }
 }

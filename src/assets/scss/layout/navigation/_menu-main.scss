@@ -2,15 +2,9 @@
     
     .logo {
         &--inside-menu {
-            width: 36%;
-        }
-        &--small {
-            background-image: url( '../images/logo-abcservitodo.png' );
-            background-position: -8px center;
-            background-repeat: no-repeat;
             //border: 1px solid blue;
-            height: 32px;
-            width: 210px;
+            box-sizing: border-box;
+            width: 74%;
         }
     }
     

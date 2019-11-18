@@ -5,6 +5,18 @@
         margin: -1rem 0;
     }
 
+    .container {
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+
+            @include media-md {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+        }
+    }
+
     & > div:first-child {
         background-color: #F8F5F2;
         padding: 0;
@@ -22,7 +34,7 @@
         hgroup {
             //border: 1px solid green;
             background-color: #FFFFFF;
-            margin: -1rem;
+            margin-top: -1rem;
 
             @include media-md {
                 margin: 2.5rem .5rem 0 -1rem;
@@ -35,7 +47,7 @@
         hgroup {
             //border: 1px solid green;
             background-color: #FFFFFF;
-            margin: 2.4rem;
+            margin: 2.4rem 0 0 1rem;
             //padding: 1rem 1.5rem;
             position: absolute;
             width: 90%;
@@ -76,7 +88,7 @@
 
     hgroup {
         text-align: left;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
 
         h2 {
             font-size: 1.6rem;

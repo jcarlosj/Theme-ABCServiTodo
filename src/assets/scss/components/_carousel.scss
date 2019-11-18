@@ -1,22 +1,25 @@
 .carousel {
 
-    .carousel-item {
+    &-item {
         margin: 0;
         padding: 0;
 
         .card {
             line-height: 1.4rem;
-            margin: 0 .5rem;
+            margin: 0 .4rem;
             text-align: center;
 
             &-body {
-                padding: 2.2rem .6rem 1rem .6rem;
+                background-color: #1a71b1;
+                //padding: 1rem .4rem;
             }
 
             &-title {
-                color: #f77a7a;
+                color: white;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 700;
+                padding: 0;
+                margin: 0;
             }
 
             &-text {
@@ -24,6 +27,8 @@
             }
 
             &--image {
+                //border: 3px dotted black;
+                // box-sizing: border-box;
                 position: relative;
                 top: 0;
                 left: 0;

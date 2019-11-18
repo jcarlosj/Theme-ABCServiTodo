@@ -28,7 +28,7 @@
         //border: 1px solid blue;
         //box-sizing: border-box;
 
-        background-color: #F8F5F2; 
+        background-color: #1a71b1; 
 
         @include media-md {
             background-color: #1a71b1; 
@@ -81,6 +81,11 @@
     &__middle {
         //background-color: rgba(26, 113, 177, 1);
         display: none;
+
+        .container {
+            //border: 1px solid red;
+            padding: 0;
+        }
 
         @include media-md {
             display: block;

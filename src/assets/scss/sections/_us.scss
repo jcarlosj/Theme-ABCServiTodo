@@ -1,30 +1,54 @@
 .us {
-    margin: 3rem 0;
+    //margin: -1rem 0;
+
+    @include media-md {
+        margin: -1rem 0;
+    }
 
     & > div:first-child {
-       background-color: #F8F5F2;
-       padding: 1rem 0;
+        background-color: #F8F5F2;
+        padding: 0;
+
+        @include media-md {
+            padding: 1rem 0;
+        }
+       
     }
     & > div:last-child {
-        margin-top: -7.5rem;
+        //margin-top: -7.5rem;
     }
 
     &__choose-us {
         hgroup {
             //border: 1px solid green;
             background-color: #FFFFFF;
-            margin: 2.5rem .5rem 0 -1rem;
+            margin: -1rem;
+
+            @include media-md {
+                margin: 2.5rem .5rem 0 -1rem;
+            }
+            
         }
     }
 
     &__we-do-it {
         hgroup {
             //border: 1px solid green;
-            background-color: #F8F5F2;
+            background-color: #FFFFFF;
             margin: 2.4rem;
             //padding: 1rem 1.5rem;
             position: absolute;
             width: 90%;
+
+            &.call-us {
+                //border: 3px solid blue;
+                //box-sizing: border-box;
+                background-color: #F8F5F2;
+                margin: 0 auto;
+                width: 76%;
+                bottom: 10%;
+                padding: .8rem;
+            }
 
             @include media-md {
                 width: 83%;

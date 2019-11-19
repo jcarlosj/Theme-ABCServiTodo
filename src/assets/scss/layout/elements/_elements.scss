@@ -15,12 +15,14 @@ h3 {
 p, ul {
     margin-top: 1rem;
 }
-
-section {
-    .container{
-        padding: 1rem 0 3rem 0;
+main {
+    section {
+        .container{
+            padding: 1rem 0 3rem 0;
+        }
     }
 }
+
 
 
 @import 'hgroups';

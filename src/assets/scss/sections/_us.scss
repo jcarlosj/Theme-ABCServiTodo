@@ -31,35 +31,93 @@
     }
 
     &__choose-us {
+
+        @include media-md {
+            padding-left: 1rem;
+        }
+
         hgroup {
-            //border: 1px solid green;
             background-color: #FFFFFF;
-            margin-top: -1rem;
 
             @include media-md {
-                margin: 2.5rem .5rem 0 -1rem;
+                margin: 3.5rem .5rem 0 -1rem;
+                padding: 0;
             }
-            
+
+            &.title {
+                h3 {
+                    padding: 0;
+                }
+
+                .info {
+                    padding: 1rem;
+                }
+            }
         }
     }
 
     &__we-do-it {
         hgroup {
-            //border: 1px solid green;
-            background-color: #FFFFFF;
-            margin: 2.4rem 0 0 1rem;
-            //padding: 1rem 1.5rem;
             position: absolute;
-            width: 90%;
+
+            @include media-md {
+                //background-color: #FFFFFF;
+                //width: 92.5% ! important;
+            }
+
+            h2 ,h3 {
+                font-family: 'Nunito', sans-serif;
+                padding: 0;
+                text-align: left;
+            }
+
+            h3 {
+                color: #f77a7a;
+                //font-size: 1.2rem;
+            }
+
+            .info {
+                padding: 1rem;
+            }
+
+            &.title {
+                top: 7%;
+                display: flex;
+                justify-content: flex-end;
+                width: 95%;
+
+                .info {
+                    background-color: #F8F5F2;
+                    width: 88%;
+
+                    @include media-md {
+                        background-color: #FFFFFF;
+                    }
+                }
+            }
 
             &.call-us {
-                //border: 3px solid blue;
-                //box-sizing: border-box;
-                background-color: #F8F5F2;
-                margin: 0 auto;
-                width: 76%;
-                bottom: 10%;
-                padding: .8rem;
+                width: 92.5%;
+                bottom: 3%;
+
+                @include media-md {
+                    padding: 1.2rem;
+                    width: 95%;
+
+                    h2 {
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                .info {
+                    background-color: #FFFFFF;
+                    margin: 0 auto;
+                    width: 80%;
+
+                    @include media-md {
+                        width: 80%;
+                    }
+                }
             }
 
             @include media-md {
@@ -88,7 +146,6 @@
 
     hgroup {
         text-align: left;
-        padding: 1rem;
 
         h2 {
             font-size: 1.6rem;

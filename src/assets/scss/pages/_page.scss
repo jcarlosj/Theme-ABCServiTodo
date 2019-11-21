@@ -4,21 +4,51 @@
         font-size: 2.4rem;
     }
 
+    .outstanding-image {
+        border-bottom: 20px solid #F8F5F2;
+
+        @include media-md {
+            border: none;
+        }
+    }
+
     &-header {
         position: relative;
     }
     &--title {
-        background-color: #FFFFFF;
-        margin-top: 2.6rem;
-        padding: 1rem 2rem 1rem .2rem;
-        position: absolute;
+        background-color: #F8F5F2; 
+        margin-top: 1.5rem;
+        padding: .6rem;
         z-index: 10;
-        
+
+        h1 {
+            font-size: 1.6rem;
+            text-align: center;
+            font-weight: bold;
+            color: #1a71b1;
+        }
         h2 {
             font-size: 3rem;
         }
         h3 {
             font-size: 2rem;
+        }
+
+        @include media-md {
+            background-color: #FFFFFF;
+            position: absolute;
+
+            h1 {
+                font-size: 2.4rem; 
+            }
+        }
+    }
+
+    &--content {
+        margin: 0 15px;
+
+        @include media-md {
+            margin: 0;
         }
     }
 

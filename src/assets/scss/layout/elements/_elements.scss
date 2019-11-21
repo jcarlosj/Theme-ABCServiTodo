@@ -17,8 +17,14 @@ p, ul {
 }
 main {
     section {
-        .container{
+        .container {
             padding: 1rem 0 3rem 0;
+        }
+
+        &.page {
+            .container {
+                padding: 0;
+            }
         }
     }
 }
